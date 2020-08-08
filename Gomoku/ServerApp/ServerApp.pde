@@ -127,7 +127,8 @@ void mouseClicked() {
       }
       if (check(x, y)) {
         server.write("0 1\n");
-        background(255);
+        fill(255, 150);
+        rect(0, 0, width, height);
         fill(0);
         textSize(50);
         text("YOU WIN", width/2, height/2);
@@ -150,7 +151,7 @@ void mouseClicked() {
 }
 
 void restart() {
-  fill(255);
+  fill(255, 150);
   rect(width/2-100, height/2+65, 200, 35);
   fill(0);
   textSize(30);
@@ -166,7 +167,8 @@ void draw() {
       int x = int(ss[0]);
       int y = int(ss[1]);
       if(x == 0) {
-        background(255);
+        fill(255, 150);
+        rect(0, 0, width, height);
         fill(0);
         textSize(50);
         text("YOU LOSE", width/2, height/2);
