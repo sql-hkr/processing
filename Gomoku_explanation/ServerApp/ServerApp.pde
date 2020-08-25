@@ -179,7 +179,7 @@ void restart() {
   text("CONTINUE", width/2, height/2+80);
 }
 
-//クライアントイベント
+//描写
 void draw() {
   Client c = server.available();
   if (c != null) {
