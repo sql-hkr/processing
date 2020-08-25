@@ -137,7 +137,6 @@ void mouseClicked() {
       }
       break;
     case 3:
-    println("ok");
       if (mouseX < width/2-100) break;
       if (mouseX > width/2+100) break;
       if (mouseY < height/2+65) break;
